@@ -135,6 +135,9 @@ legend {
 
 .myForm textarea {
     height: 6rem;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
 }
 
 .myForm :required {
