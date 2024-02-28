@@ -117,12 +117,8 @@ main a:hover {
     margin: .5rem;
 }
 
-.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea {
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=email], .myForm [type=tel], .myForm textarea {
     display: block;
-}
-
-legend {
-    border: 1px solid #efefef;
 }
 
 .myForm [type=text], .myForm [type=tel], .myForm select, .myForm textarea, {
