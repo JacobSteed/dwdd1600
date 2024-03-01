@@ -1,0 +1,282 @@
+body {
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+/* header stuff here */
+header {
+    background-color: #FFD717;
+    padding: 1rem 2vw;
+    border: 3px solid;
+    display: flex;
+    align-items: flex;
+}
+header div {
+    padding-left: 1vw;
+}
+header h1 {
+    margin: 0;
+}
+header p {
+    margin: 0;
+    letter-spacing: .5px;
+}
+
+
+/* nav stuff here */
+/* small screen nav here */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+    padding: 0 2vw;
+    list-style-type: off;
+    }
+    
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: off;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #4C4779;
+    }
+    nav .active a {
+        background-color: #FFD717;
+        background-image: linear-gradient(to bottom, #FFD717, #AB9B0F);
+        color: white;
+        border: 3px solid;
+        border-color: #4C4779;
+    }
+}
+
+/* Big screen nav here */
+@media only screen and (min-width: 601px) {
+    nav {
+    background-color: #2211BE;
+    border: 3px solid;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    nav a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+        display: block;
+        padding: .83rem 2rem;
+    }
+    nav li.active a {
+        background-color: #2984DB;
+        color: #fff;
+    }
+    nav a:hover {
+        color: #FFD717;
+    }
+}
+
+
+/* main stuff here */
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #25333F;
+}
+
+main h2 {
+    color: #4C4779;
+    margin-bottom: .2rem;
+}
+
+main p {
+    color: #25333F;
+    margin: 0 0 .3rem 0;
+}
+
+main ol {
+    ;
+}
+
+main dl dt {
+    color: #5C5236;
+    font-weight: 700;
+}
+main dl dd {
+    font-size: .9rem;
+}
+main ul {
+    list-style-type: circle;
+    background-color: #efefef
+}
+main li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #FFD717;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 3px solid #4C4779;
+    border-radius: .3rem;
+}
+
+main a {
+    color: #4C4779;
+}
+main a:hover {
+    color: #2984DB;
+}
+main figcaption {
+    text-align: center;
+    font-size: .8rem;
+    border: solid 3px black;
+    background-color: #2984DB;
+    border-radius: 10px;
+    color: white;
+}
+
+/* hero image stuff */
+
+.lanhero {
+    width: 90%;
+    margin: 0;
+}
+
+.lanhero img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* sign-up form stuff here */
+.myForm field {
+    border: 1px solid #2984DB;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #25333F;
+    font-size: .8rem;
+}
+
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=email], .myForm [type=tel], .myForm textarea {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=email], .myForm [type=tel], .myForm select, .myForm textarea, {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-weight: 200;
+}
+
+.myForm textarea {
+    height: 6rem;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+}
+
+.myForm :required {
+    background-color: rgba(156,51,53,0.1)
+}
+
+.myForm [type=submit] {
+    background-color: #2984DB;
+    border: solid 3px #FFD717;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+.myForm [type=submit]:hover {
+    background-color: #4C4779;
+    border-color: #4C4779;
+}
+
+
+/*gallery stuff here*/
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    border: solid 3px black;
+    background-color: #2984DB;
+    border-radius: 10px;
+    color: white;
+}
+div.gallery img {
+    width: 98%;
+    height: auto;
+    box-shadow: 0px 0px 10px black;
+    border: solid 3px;
+}
+div.gallery img:hover {
+    box-shadow: 0px 0px 12px #FFD717;
+    border: solid 3px #2984DB;
+}
+
+
+/* footer stuff here */
+footer {
+    background-color: #efefef;
+    text-align: center;
+    color: #25333F;
+    padding: .8rem;
+    font-size: .8rem;
+    clear: both;
+}
+footer a {
+    color: #024873;
+}
+
+footer a:hover {
+    color: #2984DB;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}

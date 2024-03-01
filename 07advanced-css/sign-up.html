@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Mass Rez: Sign Up</title>
+        <meta name="description" content="LAN Event Planning Let's Game Together">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="author" content="Jacob Steed">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="massrez.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <!-- Start of Page Header -->
+         <header>
+            <img src="images/logo.png" alt="site logo" width="87" height="100">
+            <div>
+            <h1>Mass Rez</h1>
+            <p>LAN Event Planning &bull; Lets Game Together</p>
+            </div>
+        </header>
+        
+        <!-- Start of Page navigation -->
+        <nav>
+            <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li class="active"><a href="sign-up.html">Sign Up</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Start of Page content -->
+        <main>
+        <h1>Sign Up</h1>
+        <form method="get" class="myForm" action="thanks.html">
+        
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label>First Name*<input type="text" name="fname" required>
+            </label>
+            <label>Last Name*<input type="text" name="lname" required>
+            </label>
+            <label>Phone Number*<input type="tel" name="phone" required placeholder="987551234">
+            </label>
+            <label for="email">Email:<input type="email" id="email" name="email">
+            </label>
+            <label>Discord Name<input type="text" name="uname">
+            </label>
+        </fieldset>
+            
+         <fieldset>
+            <legend>What is your #1 Gaming System?</legend>
+            <label><input type="radio" name="method" value="xbx1">Xbox (One or Seires S/X)
+            </label>
+            <label><input type="radio" name="method" value="playstation">PlayStation (4-5)
+            </label>
+            <label><input type="radio" name="method" value="PC">PC
+            </label>
+             <label><input type="radio" name="method" value="Wii">Wii
+            </label>
+             <label><input type="radio" name="method" value="gamecube">Gamecube
+            </label>
+             <label><input type="radio" name="method" value="switch">Nintendo Switch
+            </label>
+             <label><input type="radio" name="method" value="other">Other (Please specify in the comments below)
+            </label>
+        </fieldset>
+            
+        <fieldset>
+        <legend>Select the Days that Work for You</legend>
+            <label><input type="checkbox" name="sunday" value="chosen">Sunday</label>
+            <label><input type="checkbox" name="monday" value="chosen">Monday</label>
+            <label><input type="checkbox" name="tuesday" value="chosen">Tuesday</label>
+            <label><input type="checkbox" name="wednesday" value="chosen">Wednesday</label>
+            <label><input type="checkbox" name="thursday" value="chosen">Thursday</label>
+            <label><input type="checkbox" name="friday" value="chosen">Friday</label>
+            <label><input type="checkbox" name="saturday" value="chosen">Saturday</label>
+            
+            <label>Select your preferred Time of Day
+            <select name="time">
+            <option value="none">Please Select</option>
+            <option value="morning">8:00am - 11:00am</option>
+            <option value="noon">11:00am - 2:00pm</option>
+            <option value="afternoon">2:00pm - 6:00pm</option>
+            <option value="evening">6:00pm - 10:00pm</option>
+            <option value="all-nighter">10:00pm - 2:00am</option>
+            </select>
+            </label>
+        
+        </fieldset>
+        
+            <label>Comments
+            <textarea name="comments"></textarea>
+            </label>
+            
+        <input type="submit" value="Submit">
+        </form>
+        
+       
+        </main>
+<!-- Start of Page Footer -->
+        <footer>
+        <p>&copy; 2024 &bull; Mass Rez &bull; Jacob Steed &bull; <a href="mailto:borkpoabis@gmail.com">Email Us</a></p>
+        </footer>
+    </body>
+</html>
